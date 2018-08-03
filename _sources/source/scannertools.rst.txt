@@ -1,0 +1,134 @@
+scannertools package
+====================
+
+Submodules
+----------
+
+scannertools.audio module
+-------------------------
+
+.. automodule:: scannertools.audio
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.bboxes module
+--------------------------
+
+.. automodule:: scannertools.bboxes
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.clothing\_detection module
+---------------------------------------
+
+.. automodule:: scannertools.clothing_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.face\_detection module
+-----------------------------------
+
+.. automodule:: scannertools.face_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.face\_embedding module
+-----------------------------------
+
+.. automodule:: scannertools.face_embedding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.gender\_detection module
+-------------------------------------
+
+.. automodule:: scannertools.gender_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.kube module
+------------------------
+
+.. automodule:: scannertools.kube
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.object\_detection module
+-------------------------------------
+
+.. automodule:: scannertools.object_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.optical\_flow module
+---------------------------------
+
+.. automodule:: scannertools.optical_flow
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.pose\_detection module
+-----------------------------------
+
+.. automodule:: scannertools.pose_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.prelude module
+---------------------------
+
+.. automodule:: scannertools.prelude
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.shot\_detection module
+-----------------------------------
+
+.. automodule:: scannertools.shot_detection
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.tf\_vis\_utils module
+----------------------------------
+
+.. automodule:: scannertools.tf_vis_utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.video module
+-------------------------
+
+.. automodule:: scannertools.video
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scannertools.vis module
+-----------------------
+
+.. automodule:: scannertools.vis
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: scannertools
+    :members:
+    :undoc-members:
+    :show-inheritance:

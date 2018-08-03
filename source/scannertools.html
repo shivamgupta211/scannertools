@@ -1,0 +1,1533 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>scannertools package &#8212; scannertools  documentation</title>
+    <link rel="stylesheet" href="../_static/nameko.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </head><body>
+  
+  
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scannertools  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scannertools-package">
+<h1>scannertools package<a class="headerlink" href="#scannertools-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-scannertools.audio">
+<span id="scannertools-audio-module"></span><h2>scannertools.audio module<a class="headerlink" href="#module-scannertools.audio" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.audio.Audio">
+<em class="property">class </em><code class="descclassname">scannertools.audio.</code><code class="descname">Audio</code><span class="sig-paren">(</span><em>audio_path</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.audio.Audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Reference to an audio file on disk.</p>
+<dl class="method">
+<dt id="scannertools.audio.Audio.extract">
+<code class="descname">extract</code><span class="sig-paren">(</span><em>path=None</em>, <em>ext='.wav'</em>, <em>segment=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.audio.Audio.extract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.audio.Audio.path">
+<code class="descname">path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.audio.Audio.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.bboxes">
+<span id="scannertools-bboxes-module"></span><h2>scannertools.bboxes module<a class="headerlink" href="#module-scannertools.bboxes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.bboxes.BboxNMS">
+<em class="property">class </em><code class="descclassname">scannertools.bboxes.</code><code class="descname">BboxNMS</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.bboxes.BboxNMS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.kernel.Kernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.bboxes.BboxNMS.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>*input_columns</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.bboxes.BboxNMS.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.clothing_detection">
+<span id="scannertools-clothing-detection-module"></span><h2>scannertools.clothing_detection module<a class="headerlink" href="#module-scannertools.clothing_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.clothing_detection.Clothing">
+<em class="property">class </em><code class="descclassname">scannertools.clothing_detection.</code><code class="descname">Clothing</code><span class="sig-paren">(</span><em>predictions</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.Clothing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.clothing_detection.</code><code class="descname">ClothingDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['bboxes']</em><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><em>adjust_bboxes=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'clothing'</em><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.clothing_detection.ClothingDetectionPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'pipeline_instances_per_node': 1}</em><a class="headerlink" href="#scannertools.clothing_detection.ClothingDetectionPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.clothing_detection.DetectClothing">
+<em class="property">class </em><code class="descclassname">scannertools.clothing_detection.</code><code class="descname">DetectClothing</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.DetectClothing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.clothing_detection.TorchKernel" title="scannertools.clothing_detection.TorchKernel"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.clothing_detection.TorchKernel</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.clothing_detection.DetectClothing.detect_edge_text">
+<code class="descname">detect_edge_text</code><span class="sig-paren">(</span><em>img</em>, <em>start_y=40</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.DetectClothing.detect_edge_text" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.DetectClothing.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em>, <em>bboxes: bytes</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.clothing_detection.DetectClothing.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.clothing_detection.TorchKernel">
+<em class="property">class </em><code class="descclassname">scannertools.clothing_detection.</code><code class="descname">TorchKernel</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.TorchKernel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.kernel.Kernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.clothing_detection.TorchKernel.build_model">
+<code class="descname">build_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.TorchKernel.build_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.TorchKernel.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.TorchKernel.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.TorchKernel.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.TorchKernel.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.clothing_detection.TorchKernel.images_to_tensor">
+<code class="descname">images_to_tensor</code><span class="sig-paren">(</span><em>images</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.TorchKernel.images_to_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.clothing_detection.parse_clothing">
+<code class="descclassname">scannertools.clothing_detection.</code><code class="descname">parse_clothing</code><span class="sig-paren">(</span><em>s</em>, <em>_proto</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.clothing_detection.parse_clothing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.face_detection">
+<span id="scannertools-face-detection-module"></span><h2>scannertools.face_detection module<a class="headerlink" href="#module-scannertools.face_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.face_detection.FaceDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.face_detection.</code><code class="descname">FaceDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.face_detection.FaceDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_detection.FaceDetectionPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.face_detection.FaceDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'face'</em><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_detection.FaceDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.face_detection.FaceDetectionPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'pipeline_instances_per_node': 1}</em><a class="headerlink" href="#scannertools.face_detection.FaceDetectionPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.face_detection.MTCNNDetectFaces">
+<em class="property">class </em><code class="descclassname">scannertools.face_detection.</code><code class="descname">MTCNNDetectFaces</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.MTCNNDetectFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.stdlib.tensorflow.TensorFlowKernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.face_detection.MTCNNDetectFaces.build_graph">
+<code class="descname">build_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_detection.MTCNNDetectFaces.build_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_detection.MTCNNDetectFaces.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.face_detection.MTCNNDetectFaces.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.face_embedding">
+<span id="scannertools-face-embedding-module"></span><h2>scannertools.face_embedding module<a class="headerlink" href="#module-scannertools.face_embedding" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.face_embedding.EmbedFaces">
+<em class="property">class </em><code class="descclassname">scannertools.face_embedding.</code><code class="descname">EmbedFaces</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.EmbedFaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.stdlib.tensorflow.TensorFlowKernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.face_embedding.EmbedFaces.build_graph">
+<code class="descname">build_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.EmbedFaces.build_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_embedding.EmbedFaces.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em>, <em>bboxes: bytes</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.face_embedding.EmbedFaces.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.face_embedding.</code><code class="descname">FaceEmbeddingPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['bboxes']</em><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'embed'</em><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.face_embedding.FaceEmbeddingPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'pipeline_instances_per_node': 1}</em><a class="headerlink" href="#scannertools.face_embedding.FaceEmbeddingPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.gender_detection">
+<span id="scannertools-gender-detection-module"></span><h2>scannertools.gender_detection module<a class="headerlink" href="#module-scannertools.gender_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.gender_detection.DetectGender">
+<em class="property">class </em><code class="descclassname">scannertools.gender_detection.</code><code class="descname">DetectGender</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.gender_detection.DetectGender" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.kernel.Kernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.gender_detection.DetectGender.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em>, <em>bboxes: bytes</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.gender_detection.DetectGender.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.gender_detection.</code><code class="descname">GenderDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['bboxes']</em><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'gender'</em><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.gender_detection.GenderDetectionPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'pipeline_instances_per_node': 1}</em><a class="headerlink" href="#scannertools.gender_detection.GenderDetectionPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.kube">
+<span id="scannertools-kube-module"></span><h2>scannertools.kube module<a class="headerlink" href="#module-scannertools.kube" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.kube.CloudConfig">
+<em class="property">class </em><code class="descclassname">scannertools.kube.</code><code class="descname">CloudConfig</code><span class="sig-paren">(</span><em>project: str</em>, <em>service_key: str = NOTHING</em>, <em>storage_key_id: str = NOTHING</em>, <em>storage_key_secret: str = NOTHING</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.CloudConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.kube.Cluster">
+<em class="property">class </em><code class="descclassname">scannertools.kube.</code><code class="descname">Cluster</code><span class="sig-paren">(</span><em>cloud_config</em>, <em>cluster_config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="scannertools.kube.Cluster.cli">
+<code class="descname">cli</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.cli" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.create_object">
+<code class="descname">create_object</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.create_object" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.database">
+<code class="descname">database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.database" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.get_by_owner">
+<code class="descname">get_by_owner</code><span class="sig-paren">(</span><em>ty</em>, <em>owner</em>, <em>namespace='default'</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.get_by_owner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.get_credentials">
+<code class="descname">get_credentials</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.get_credentials" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.get_kube_info">
+<code class="descname">get_kube_info</code><span class="sig-paren">(</span><em>kind</em>, <em>namespace='default'</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.get_kube_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.get_object">
+<code class="descname">get_object</code><span class="sig-paren">(</span><em>info</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.get_object" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.get_pod">
+<code class="descname">get_pod</code><span class="sig-paren">(</span><em>deployment</em>, <em>namespace='default'</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.get_pod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.kube_start">
+<code class="descname">kube_start</code><span class="sig-paren">(</span><em>reset=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.kube_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.machine_start">
+<code class="descname">machine_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.machine_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.make_container">
+<code class="descname">make_container</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.make_container" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.make_deployment">
+<code class="descname">make_deployment</code><span class="sig-paren">(</span><em>name</em>, <em>replicas</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.make_deployment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.master_address">
+<code class="descname">master_address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.master_address" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.resize">
+<code class="descname">resize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.running">
+<code class="descname">running</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.running" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.kube.Cluster.wait_on_job">
+<code class="descname">wait_on_job</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.Cluster.wait_on_job" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.kube.ClusterConfig">
+<em class="property">class </em><code class="descclassname">scannertools.kube.</code><code class="descname">ClusterConfig</code><span class="sig-paren">(</span><em>id: str, num_workers: int, zone: str = 'us-east1-b', kube_version: str = '1.9.7-gke.3', master: scannertools.kube.MachineConfig = MachineConfig(cpu=4, mem=96, disk=100, gpu=0, gpu_type='nvidia-tesla-p100'), worker: scannertools.kube.MachineConfig = MachineConfig(cpu=64, mem=256, disk=100, gpu=0, gpu_type='nvidia-tesla-p100'), workers_per_node: int = 1, preemptible: bool = False, autoscale: bool = False, no_workers_timeout: int = 600, scopes: list = ['https://www.googleapis.com/auth/compute', 'https://www.googleapis.com/auth/devstorage.read_write', 'https://www.googleapis.com/auth/logging.write', 'https://www.googleapis.com/auth/monitoring', 'https://www.googleapis.com/auth/pubsub', 'https://www.googleapis.com/auth/servicecontrol', 'https://www.googleapis.com/auth/service.management.readonly', 'https://www.googleapis.com/auth/trace.append'], scanner_config: str = '/root/.scanner/config.toml', pipelines: list = []</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.ClusterConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.kube.MachineConfig">
+<em class="property">class </em><code class="descclassname">scannertools.kube.</code><code class="descname">MachineConfig</code><span class="sig-paren">(</span><em>cpu: int</em>, <em>mem: int</em>, <em>disk: int</em>, <em>gpu: int = 0</em>, <em>gpu_type: str = 'nvidia-tesla-p100'</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.MachineConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="scannertools.kube.MachineConfig.type_name">
+<code class="descname">type_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.MachineConfig.type_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.kube.master">
+<code class="descclassname">scannertools.kube.</code><code class="descname">master</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.master" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.kube.run">
+<code class="descclassname">scannertools.kube.</code><code class="descname">run</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.kube.worker">
+<code class="descclassname">scannertools.kube.</code><code class="descname">worker</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.kube.worker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.object_detection">
+<span id="scannertools-object-detection-module"></span><h2>scannertools.object_detection module<a class="headerlink" href="#module-scannertools.object_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.object_detection.DetectObjects">
+<em class="property">class </em><code class="descclassname">scannertools.object_detection.</code><code class="descname">DetectObjects</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.DetectObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.stdlib.tensorflow.TensorFlowKernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.object_detection.DetectObjects.build_graph">
+<code class="descname">build_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.DetectObjects.build_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.object_detection.DetectObjects.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em><span class="sig-paren">)</span> &#x2192; bytes<a class="headerlink" href="#scannertools.object_detection.DetectObjects.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.object_detection.</code><code class="descname">ObjectDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<p>Detects objects in a video.</p>
+<p>Uses the SSD-Mobilenet architecture from the TensorFlow <a class="reference external" href="https://github.com/tensorflow/models/tree/abd504235f3c2eed891571d62f0a424e54a2dabc/research/object_detection">Object Detection API</a>.</p>
+<dl class="method">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'objdet'</em><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.object_detection.ObjectDetectionPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'pipeline_instances_per_node': 1}</em><a class="headerlink" href="#scannertools.object_detection.ObjectDetectionPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.optical_flow">
+<span id="scannertools-optical-flow-module"></span><h2>scannertools.optical_flow module<a class="headerlink" href="#module-scannertools.optical_flow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.optical_flow.OpticalFlowPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.optical_flow.</code><code class="descname">OpticalFlowPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.optical_flow.OpticalFlowPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<p>Computes optical flow on a video.</p>
+<p>Unlike other functions, flow fields aren’t materialized into memory as they’re simply
+too large.</p>
+<dl class="method">
+<dt id="scannertools.optical_flow.OpticalFlowPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.optical_flow.OpticalFlowPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.optical_flow.OpticalFlowPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'flow'</em><a class="headerlink" href="#scannertools.optical_flow.OpticalFlowPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.optical_flow.OpticalFlowPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.optical_flow.OpticalFlowPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.pose_detection">
+<span id="scannertools-pose-detection-module"></span><h2>scannertools.pose_detection module<a class="headerlink" href="#module-scannertools.pose_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.pose_detection.PoseDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.pose_detection.</code><code class="descname">PoseDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.pose_detection.PoseDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.pose_detection.PoseDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.pose_detection.PoseDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.pose_detection.PoseDetectionPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.pose_detection.PoseDetectionPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.pose_detection.PoseDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'pose'</em><a class="headerlink" href="#scannertools.pose_detection.PoseDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.pose_detection.PoseDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.pose_detection.PoseDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.prelude">
+<span id="scannertools-prelude-module"></span><h2>scannertools.prelude module<a class="headerlink" href="#module-scannertools.prelude" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.prelude.BoundOp">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">BoundOp</code><span class="sig-paren">(</span><em>op</em>, <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.BoundOp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.CustomFormatter">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">CustomFormatter</code><span class="sig-paren">(</span><em>fmt=None</em>, <em>datefmt=None</em>, <em>style='%'</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.CustomFormatter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">logging.Formatter</span></code></p>
+<dl class="method">
+<dt id="scannertools.prelude.CustomFormatter.format">
+<code class="descname">format</code><span class="sig-paren">(</span><em>record</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.CustomFormatter.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format the specified record as text.</p>
+<p>The record’s attribute dictionary is used as the operand to a
+string formatting operation which yields the returned string.
+Before formatting the dictionary, a couple of preparatory steps
+are carried out. The message attribute of the record is computed
+using LogRecord.getMessage(). If the formatting string uses the
+time (as determined by a call to usesTime(), formatTime() is
+called to format the event time. If there is exception information,
+it is formatted using formatException() and appended to the message.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.DataSource">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">DataSource</code><a class="headerlink" href="#scannertools.prelude.DataSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="method">
+<dt id="scannertools.prelude.DataSource.load">
+<code class="descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.DataSource.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.DataSource.scanner_args">
+<code class="descname">scanner_args</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.DataSource.scanner_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.DataSource.scanner_source">
+<code class="descname">scanner_source</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.DataSource.scanner_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.Pipeline">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">Pipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="attribute">
+<dt id="scannertools.prelude.Pipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = []</em><a class="headerlink" href="#scannertools.prelude.Pipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.build_sink">
+<code class="descname">build_sink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.build_sink" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.build_sources">
+<code class="descname">build_sources</code><span class="sig-paren">(</span><em>videos=None</em>, <em>frames=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.build_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>source_args={}</em>, <em>pipeline_args={}</em>, <em>sink_args={}</em>, <em>output_args={}</em>, <em>run_opts={}</em>, <em>no_execute=False</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.prelude.Pipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = None</em><a class="headerlink" href="#scannertools.prelude.Pipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="scannertools.prelude.Pipeline.make_runner">
+<em class="property">classmethod </em><code class="descname">make_runner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.make_runner" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.Pipeline.parse_output">
+<code class="descname">parse_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.Pipeline.parse_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.prelude.Pipeline.parser_fn">
+<code class="descname">parser_fn</code><em class="property"> = None</em><a class="headerlink" href="#scannertools.prelude.Pipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.prelude.Pipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {}</em><a class="headerlink" href="#scannertools.prelude.Pipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.ScannerColumn">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">ScannerColumn</code><span class="sig-paren">(</span><em>column</em>, <em>parser</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ScannerColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.DataSource" title="scannertools.prelude.DataSource"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.DataSource</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.prelude.ScannerColumn.load">
+<code class="descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ScannerColumn.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.ScannerColumn.scanner_args">
+<code class="descname">scanner_args</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ScannerColumn.scanner_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.prelude.ScannerColumn.scanner_source">
+<code class="descname">scanner_source</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ScannerColumn.scanner_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.VideoOutputPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">VideoOutputPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.VideoOutputPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.prelude.VideoOutputPipeline.parse_output">
+<code class="descname">parse_output</code><span class="sig-paren">(</span><em>paths=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.VideoOutputPipeline.parse_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.prelude.WithMany">
+<em class="property">class </em><code class="descclassname">scannertools.prelude.</code><code class="descname">WithMany</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.WithMany" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.ffmpeg_extract">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">ffmpeg_extract</code><span class="sig-paren">(</span><em>input_path</em>, <em>output_ext=None</em>, <em>output_path=None</em>, <em>segment=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ffmpeg_extract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.ffmpeg_fmt_time">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">ffmpeg_fmt_time</code><span class="sig-paren">(</span><em>t</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.ffmpeg_fmt_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.get_storage">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">get_storage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.get_storage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.imwrite">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">imwrite</code><span class="sig-paren">(</span><em>path</em>, <em>img</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.imwrite" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.init_storage">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">init_storage</code><span class="sig-paren">(</span><em>bucket=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.init_storage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.par_for">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">par_for</code><span class="sig-paren">(</span><em>f</em>, <em>l</em>, <em>process=False</em>, <em>workers=None</em>, <em>progress=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.par_for" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.sample_video">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">sample_video</code><span class="sig-paren">(</span><em>delete=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.sample_video" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.scanner_ingest">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">scanner_ingest</code><span class="sig-paren">(</span><em>db</em>, <em>videos</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.scanner_ingest" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.tile">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">tile</code><span class="sig-paren">(</span><em>imgs</em>, <em>rows=None</em>, <em>cols=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.tile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.prelude.try_import">
+<code class="descclassname">scannertools.prelude.</code><code class="descname">try_import</code><span class="sig-paren">(</span><em>to_import</em>, <em>current_module</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.prelude.try_import" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.shot_detection">
+<span id="scannertools-shot-detection-module"></span><h2>scannertools.shot_detection module<a class="headerlink" href="#module-scannertools.shot_detection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.shot_detection.</code><code class="descname">ShotDetectionPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.Pipeline" title="scannertools.prelude.Pipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.Pipeline</span></code></a></p>
+<dl class="method">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'hist'</em><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline.parse_output">
+<code class="descname">parse_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline.parse_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline.parser_fn">
+<code class="descname">parser_fn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline.parser_fn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.shot_detection.ShotDetectionPipeline.run_opts">
+<code class="descname">run_opts</code><em class="property"> = {'work_packet_size': 10000}</em><a class="headerlink" href="#scannertools.shot_detection.ShotDetectionPipeline.run_opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.tf_vis_utils">
+<span id="scannertools-tf-vis-utils-module"></span><h2>scannertools.tf_vis_utils module<a class="headerlink" href="#module-scannertools.tf_vis_utils" title="Permalink to this headline">¶</a></h2>
+<p>A set of functions that are used for visualization.</p>
+<p>These functions often receive an image, perform some visualization on the image.
+The functions do not return a value, instead they modify the image itself.</p>
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.create_category_index">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">create_category_index</code><span class="sig-paren">(</span><em>categories</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.create_category_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates dictionary of COCO compatible categories keyed by category id.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>categories</strong> – <p>a list of dicts, each of which has the following keys:
+‘id’: (required) an integer id uniquely identifying this category.
+‘name’: (required) string representing category name</p>
+<blockquote>
+<div>e.g., ‘cat’, ‘dog’, ‘pizza’.</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="docutils">
+<dt>a dict containing the same entries as categories, but keyed</dt>
+<dd>by the ‘id’ field of each category.</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">category_index</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_bounding_box_on_image">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_bounding_box_on_image</code><span class="sig-paren">(</span><em>image</em>, <em>ymin</em>, <em>xmin</em>, <em>ymax</em>, <em>xmax</em>, <em>color='red'</em>, <em>thickness=4</em>, <em>display_str_list=()</em>, <em>use_normalized_coordinates=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_bounding_box_on_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a bounding box to an image.</p>
+<p>Each string in display_str_list is displayed on a separate line above the
+bounding box in black text on a rectangle filled with the input ‘color’.
+If the top of the bounding box extends to the edge of the image, the strings
+are displayed below the bounding box.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> – a PIL.Image object.</li>
+<li><strong>ymin</strong> – ymin of bounding box.</li>
+<li><strong>xmin</strong> – xmin of bounding box.</li>
+<li><strong>ymax</strong> – ymax of bounding box.</li>
+<li><strong>xmax</strong> – xmax of bounding box.</li>
+<li><strong>color</strong> – color to draw bounding box. Default is red.</li>
+<li><strong>thickness</strong> – line thickness. Default value is 4.</li>
+<li><strong>display_str_list</strong> – list of strings to display in box
+(each to be shown on its own line).</li>
+<li><strong>use_normalized_coordinates</strong> – If True (default), treat coordinates
+ymin, xmin, ymax, xmax as relative to the image.  Otherwise treat
+coordinates as absolute.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_bounding_box_on_image_array">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_bounding_box_on_image_array</code><span class="sig-paren">(</span><em>image</em>, <em>ymin</em>, <em>xmin</em>, <em>ymax</em>, <em>xmax</em>, <em>color='red'</em>, <em>thickness=4</em>, <em>display_str_list=()</em>, <em>use_normalized_coordinates=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_bounding_box_on_image_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a bounding box to an image (numpy array).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> – a numpy array with shape [height, width, 3].</li>
+<li><strong>ymin</strong> – ymin of bounding box in normalized coordinates (same below).</li>
+<li><strong>xmin</strong> – xmin of bounding box.</li>
+<li><strong>ymax</strong> – ymax of bounding box.</li>
+<li><strong>xmax</strong> – xmax of bounding box.</li>
+<li><strong>color</strong> – color to draw bounding box. Default is red.</li>
+<li><strong>thickness</strong> – line thickness. Default value is 4.</li>
+<li><strong>display_str_list</strong> – list of strings to display in box
+(each to be shown on its own line).</li>
+<li><strong>use_normalized_coordinates</strong> – If True (default), treat coordinates
+ymin, xmin, ymax, xmax as relative to the image.  Otherwise treat
+coordinates as absolute.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_bounding_boxes_on_image">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_bounding_boxes_on_image</code><span class="sig-paren">(</span><em>image</em>, <em>boxes</em>, <em>color='red'</em>, <em>thickness=4</em>, <em>display_str_list_list=()</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_bounding_boxes_on_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws bounding boxes on image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image</strong> – a PIL.Image object.</li>
+<li><strong>boxes</strong> – a 2 dimensional numpy array of [N, 4]: (ymin, xmin, ymax, xmax).
+The coordinates are in normalized format between [0, 1].</li>
+<li><strong>color</strong> – color to draw bounding box. Default is red.</li>
+<li><strong>thickness</strong> – line thickness. Default value is 4.</li>
+<li><strong>display_str_list_list</strong> – list of list of strings.
+a list of strings for each bounding box.
+The reason to pass a list of strings for a
+bounding box is that it might contain
+multiple labels.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code> – if boxes is not a [N, 4] array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_bounding_boxes_on_image_array">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_bounding_boxes_on_image_array</code><span class="sig-paren">(</span><em>image</em>, <em>boxes</em>, <em>color='red'</em>, <em>thickness=4</em>, <em>display_str_list_list=()</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_bounding_boxes_on_image_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws bounding boxes on image (numpy array).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image</strong> – a numpy array object.</li>
+<li><strong>boxes</strong> – a 2 dimensional numpy array of [N, 4]: (ymin, xmin, ymax, xmax).
+The coordinates are in normalized format between [0, 1].</li>
+<li><strong>color</strong> – color to draw bounding box. Default is red.</li>
+<li><strong>thickness</strong> – line thickness. Default value is 4.</li>
+<li><strong>display_str_list_list</strong> – list of list of strings.
+a list of strings for each bounding box.
+The reason to pass a list of strings for a
+bounding box is that it might contain
+multiple labels.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code> – if boxes is not a [N, 4] array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_bounding_boxes_on_image_tensors">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_bounding_boxes_on_image_tensors</code><span class="sig-paren">(</span><em>images</em>, <em>boxes</em>, <em>classes</em>, <em>scores</em>, <em>category_index</em>, <em>max_boxes_to_draw=20</em>, <em>min_score_thresh=0.2</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_bounding_boxes_on_image_tensors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws bounding boxes on batch of image tensors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>images</strong> – A 4D uint8 image tensor of shape [N, H, W, C].</li>
+<li><strong>boxes</strong> – [N, max_detections, 4] float32 tensor of detection boxes.</li>
+<li><strong>classes</strong> – [N, max_detections] int tensor of detection classes. Note that
+classes are 1-indexed.</li>
+<li><strong>scores</strong> – [N, max_detections] float32 tensor of detection scores.</li>
+<li><strong>category_index</strong> – a dict that maps integer ids to category dicts. e.g.
+{1: {1: ‘dog’}, 2: {2: ‘cat’}, …}</li>
+<li><strong>max_boxes_to_draw</strong> – Maximum number of boxes to draw on an image. Default 20.</li>
+<li><strong>min_score_thresh</strong> – Minimum score threshold for visualization. Default 0.2.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">4D image tensor of type uint8, with boxes drawn on top.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_keypoints_on_image">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_keypoints_on_image</code><span class="sig-paren">(</span><em>image</em>, <em>keypoints</em>, <em>color='red'</em>, <em>radius=2</em>, <em>use_normalized_coordinates=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_keypoints_on_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws keypoints on an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> – a PIL.Image object.</li>
+<li><strong>keypoints</strong> – a numpy array with shape [num_keypoints, 2].</li>
+<li><strong>color</strong> – color to draw the keypoints with. Default is red.</li>
+<li><strong>radius</strong> – keypoint radius. Default value is 2.</li>
+<li><strong>use_normalized_coordinates</strong> – if True (default), treat keypoint values as
+relative to the image.  Otherwise treat them as absolute.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_keypoints_on_image_array">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_keypoints_on_image_array</code><span class="sig-paren">(</span><em>image</em>, <em>keypoints</em>, <em>color='red'</em>, <em>radius=2</em>, <em>use_normalized_coordinates=True</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_keypoints_on_image_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws keypoints on an image (numpy array).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> – a numpy array with shape [height, width, 3].</li>
+<li><strong>keypoints</strong> – a numpy array with shape [num_keypoints, 2].</li>
+<li><strong>color</strong> – color to draw the keypoints with. Default is red.</li>
+<li><strong>radius</strong> – keypoint radius. Default value is 2.</li>
+<li><strong>use_normalized_coordinates</strong> – if True (default), treat keypoint values as
+relative to the image.  Otherwise treat them as absolute.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.draw_mask_on_image_array">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">draw_mask_on_image_array</code><span class="sig-paren">(</span><em>image</em>, <em>mask</em>, <em>color='red'</em>, <em>alpha=0.7</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.draw_mask_on_image_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws mask on an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image</strong> – uint8 numpy array with shape (img_height, img_height, 3)</li>
+<li><strong>mask</strong> – a uint8 numpy array of shape (img_height, img_height) with
+values between either 0 or 1.</li>
+<li><strong>color</strong> – color to draw the keypoints with. Default is red.</li>
+<li><strong>alpha</strong> – transparency value between 0 and 1. (default: 0.7)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code> – On incorrect data type for image or masks.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.encode_image_array_as_png_str">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">encode_image_array_as_png_str</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.encode_image_array_as_png_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encodes a numpy array into a PNG string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> – a numpy array with shape [height, width, 3].</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">PNG encoded image string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.parse_labelmap">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">parse_labelmap</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.parse_labelmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a label map (.pbtxt) to categories</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> – file path to the .pbtxt file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="docutils">
+<dt>a list of dicts, each of which has the following keys:</dt>
+<dd>’id’: an integer id uniquely identifying this category.
+‘name’: string representing category name<blockquote class="last">
+<div>e.g., ‘cat’, ‘dog’, ‘pizza’.</div></blockquote>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">categories</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.save_image_array_as_png">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">save_image_array_as_png</code><span class="sig-paren">(</span><em>image</em>, <em>output_path</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.save_image_array_as_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves an image (represented as a numpy array) to PNG.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> – a numpy array with shape [height, width, 3].</li>
+<li><strong>output_path</strong> – path to which image should be written.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.tf_vis_utils.visualize_boxes_and_labels_on_image_array">
+<code class="descclassname">scannertools.tf_vis_utils.</code><code class="descname">visualize_boxes_and_labels_on_image_array</code><span class="sig-paren">(</span><em>image</em>, <em>boxes</em>, <em>classes</em>, <em>scores</em>, <em>category_index</em>, <em>instance_masks=None</em>, <em>keypoints=None</em>, <em>use_normalized_coordinates=False</em>, <em>max_boxes_to_draw=20</em>, <em>min_score_thresh=0.5</em>, <em>agnostic_mode=False</em>, <em>line_thickness=4</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.tf_vis_utils.visualize_boxes_and_labels_on_image_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overlay labeled boxes on an image with formatted scores and label names.</p>
+<p>This function groups boxes that correspond to the same location
+and creates a display string for each detection and overlays these
+on the image. Note that this function modifies the image in place, and returns
+that same image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>image</strong> – uint8 numpy array with shape (img_height, img_width, 3)</li>
+<li><strong>boxes</strong> – a numpy array of shape [N, 4]</li>
+<li><strong>classes</strong> – a numpy array of shape [N]. Note that class indices are 1-based,
+and match the keys in the label map.</li>
+<li><strong>scores</strong> – a numpy array of shape [N] or None.  If scores=None, then
+this function assumes that the boxes to be plotted are groundtruth
+boxes and plot all boxes as black with no classes or scores.</li>
+<li><strong>category_index</strong> – a dict containing category dictionaries (each holding
+category index <cite>id</cite> and category name <cite>name</cite>) keyed by category indices.</li>
+<li><strong>instance_masks</strong> – a numpy array of shape [N, image_height, image_width], can
+be None</li>
+<li><strong>keypoints</strong> – a numpy array of shape [N, num_keypoints, 2], can
+be None</li>
+<li><strong>use_normalized_coordinates</strong> – whether boxes is to be interpreted as
+normalized coordinates or not.</li>
+<li><strong>max_boxes_to_draw</strong> – maximum number of boxes to visualize.  If None, draw
+all boxes.</li>
+<li><strong>min_score_thresh</strong> – minimum score threshold for a box to be visualized</li>
+<li><strong>agnostic_mode</strong> – boolean (default: False) controlling whether to evaluate in
+class-agnostic mode or not.  This mode will display scores but ignore
+classes.</li>
+<li><strong>line_thickness</strong> – integer (default: 4) controlling line width of the boxes.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">uint8 numpy array with shape (img_height, img_width, 3) with overlaid boxes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.video">
+<span id="scannertools-video-module"></span><h2>scannertools.video module<a class="headerlink" href="#module-scannertools.video" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.video.Video">
+<em class="property">class </em><code class="descclassname">scannertools.video.</code><code class="descname">Video</code><span class="sig-paren">(</span><em>path</em>, <em>scanner_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Reference to a video file on disk.</p>
+<p>Currently only supports mp4.</p>
+<dl class="method">
+<dt id="scannertools.video.Video.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>path</em>, <em>scanner_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) – Path to video file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.audio">
+<code class="descname">audio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the audio from the video.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Reference to the audio file.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#scannertools.audio.Audio" title="scannertools.audio.Audio">Audio</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.duration">
+<code class="descname">duration</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.duration" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Length of the video in seconds.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.extract">
+<code class="descname">extract</code><span class="sig-paren">(</span><em>path=None</em>, <em>ext='.mp4'</em>, <em>segment=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract an mp4 out of the video.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to write the video.</li>
+<li><strong>ext</strong> (<em>str</em><em>, </em><em>optional</em>) – Video extension to write</li>
+<li><strong>segment</strong> (<em>Tuple</em><em>(</em><em>int</em><em>, </em><em>int</em><em>)</em><em>, </em><em>optional</em>) – Start/end in seconds</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Path to the created video</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.fps">
+<code class="descname">fps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.fps" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Frames per seconds of the video.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.frame">
+<code class="descname">frame</code><span class="sig-paren">(</span><em>number=None</em>, <em>time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract a single frame from the video into memory.</p>
+<p>Exactly one of number or time should be specified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – The index of the frame to access.</li>
+<li><strong>time</strong> (<em>float</em><em>, </em><em>optional</em>) – The time in seconds of the frame to access.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">(h x w x 3) np.uint8 image.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.frames">
+<code class="descname">frames</code><span class="sig-paren">(</span><em>numbers=None</em>, <em>times=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.frames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract multiple frames from the video into memory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>numbers</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – The indices of the frames to access.</li>
+<li><strong>times</strong> (<em>List</em><em>[</em><em>float</em><em>]</em><em>, </em><em>optional</em>) – The times in seconds of the frames to access.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of (h x w x 3) np.uint8 images.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">List[np.array]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.height">
+<code class="descname">height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.height" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Height in pixels of the video.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.montage">
+<code class="descname">montage</code><span class="sig-paren">(</span><em>frames</em>, <em>rows=None</em>, <em>cols=None</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.montage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a tiled montage of frames in the video.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>frames</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – List of frame indices.</li>
+<li><strong>rows</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Number of rows in the montage.</li>
+<li><strong>cols</strong> (<em>List</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Number of columns in the montage.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Image of the montage.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.num_frames">
+<code class="descname">num_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.num_frames" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Number of frames in the video.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.path">
+<code class="descname">path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Video file path.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.scanner_name">
+<code class="descname">scanner_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.scanner_name" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Name of the video file in the Scanner database.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="scannertools.video.Video.width">
+<code class="descname">width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.video.Video.width" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Width in pixels of the video.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-scannertools.vis">
+<span id="scannertools-vis-module"></span><h2>scannertools.vis module<a class="headerlink" href="#module-scannertools.vis" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="scannertools.vis.BboxDraw">
+<em class="property">class </em><code class="descclassname">scannertools.vis.</code><code class="descname">BboxDraw</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.BboxDraw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scannerpy.kernel.Kernel</span></code></p>
+<dl class="method">
+<dt id="scannertools.vis.BboxDraw.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>frame: scannerpy.common.FrameType</em>, <em>bboxes: bytes</em><span class="sig-paren">)</span> &#x2192; scannerpy.common.FrameType<a class="headerlink" href="#scannertools.vis.BboxDraw.execute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.vis.DrawBboxesPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.vis.</code><code class="descname">DrawBboxesPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawBboxesPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.VideoOutputPipeline" title="scannertools.prelude.VideoOutputPipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.VideoOutputPipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.vis.DrawBboxesPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['bboxes']</em><a class="headerlink" href="#scannertools.vis.DrawBboxesPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.vis.DrawBboxesPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawBboxesPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.vis.DrawBboxesPipeline.fetch_resources">
+<code class="descname">fetch_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawBboxesPipeline.fetch_resources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.vis.DrawBboxesPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'draw_bboxes'</em><a class="headerlink" href="#scannertools.vis.DrawBboxesPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.vis.DrawFlowsPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.vis.</code><code class="descname">DrawFlowsPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawFlowsPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.VideoOutputPipeline" title="scannertools.prelude.VideoOutputPipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.VideoOutputPipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.vis.DrawFlowsPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['flows']</em><a class="headerlink" href="#scannertools.vis.DrawFlowsPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.vis.DrawFlowsPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawFlowsPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.vis.DrawFlowsPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'draw_flow'</em><a class="headerlink" href="#scannertools.vis.DrawFlowsPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="scannertools.vis.DrawPosesPipeline">
+<em class="property">class </em><code class="descclassname">scannertools.vis.</code><code class="descname">DrawPosesPipeline</code><span class="sig-paren">(</span><em>db</em><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawPosesPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#scannertools.prelude.VideoOutputPipeline" title="scannertools.prelude.VideoOutputPipeline"><code class="xref py py-class docutils literal notranslate"><span class="pre">scannertools.prelude.VideoOutputPipeline</span></code></a></p>
+<dl class="attribute">
+<dt id="scannertools.vis.DrawPosesPipeline.additional_sources">
+<code class="descname">additional_sources</code><em class="property"> = ['poses']</em><a class="headerlink" href="#scannertools.vis.DrawPosesPipeline.additional_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scannertools.vis.DrawPosesPipeline.build_pipeline">
+<code class="descname">build_pipeline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scannertools.vis.DrawPosesPipeline.build_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="scannertools.vis.DrawPosesPipeline.job_suffix">
+<code class="descname">job_suffix</code><em class="property"> = 'draw_pose'</em><a class="headerlink" href="#scannertools.vis.DrawPosesPipeline.job_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="scannertools.vis.flow_draw">
+<code class="descclassname">scannertools.vis.</code><code class="descname">flow_draw</code><span class="sig-paren">(</span><em>config</em>, <em>frame: scannerpy.common.FrameType</em>, <em>flow: scannerpy.common.FrameType</em><span class="sig-paren">)</span> &#x2192; scannerpy.common.FrameType<a class="headerlink" href="#scannertools.vis.flow_draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="scannertools.vis.pose_draw">
+<code class="descclassname">scannertools.vis.</code><code class="descname">pose_draw</code><span class="sig-paren">(</span><em>config</em>, <em>frame: scannerpy.common.FrameType</em>, <em>poses: bytes</em><span class="sig-paren">)</span> &#x2192; scannerpy.common.FrameType<a class="headerlink" href="#scannertools.vis.pose_draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-scannertools">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-scannertools" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">scannertools package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-scannertools.audio">scannertools.audio module</a></li>
+<li><a class="reference internal" href="#module-scannertools.bboxes">scannertools.bboxes module</a></li>
+<li><a class="reference internal" href="#module-scannertools.clothing_detection">scannertools.clothing_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.face_detection">scannertools.face_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.face_embedding">scannertools.face_embedding module</a></li>
+<li><a class="reference internal" href="#module-scannertools.gender_detection">scannertools.gender_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.kube">scannertools.kube module</a></li>
+<li><a class="reference internal" href="#module-scannertools.object_detection">scannertools.object_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.optical_flow">scannertools.optical_flow module</a></li>
+<li><a class="reference internal" href="#module-scannertools.pose_detection">scannertools.pose_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.prelude">scannertools.prelude module</a></li>
+<li><a class="reference internal" href="#module-scannertools.shot_detection">scannertools.shot_detection module</a></li>
+<li><a class="reference internal" href="#module-scannertools.tf_vis_utils">scannertools.tf_vis_utils module</a></li>
+<li><a class="reference internal" href="#module-scannertools.video">scannertools.video module</a></li>
+<li><a class="reference internal" href="#module-scannertools.vis">scannertools.vis module</a></li>
+<li><a class="reference internal" href="#module-scannertools">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  
+  </body>
+</html>

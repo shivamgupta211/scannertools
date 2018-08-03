@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>scannertools &#8212; scannertools  documentation</title>
+    <link rel="stylesheet" href="_static/nameko.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Lora:400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </head><body>
+  
+  
+  <div class="indexwrapper">
+  
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">scannertools  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scannertools">
+<h1>scannertools<a class="headerlink" href="#scannertools" title="Permalink to this headline">¶</a></h1>
+<p>Scannertools is a high-level Python library for scalable video analysis built on the <a class="reference external" href="https://github.com/scanner-research/scanner/">Scanner</a> video processing engine. Scannertools provides easy-to-use, off-the-shelf implementations of:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#object-detection"><span class="std std-ref">Object detection</span></a></li>
+<li><a class="reference internal" href="#face-detection"><span class="std std-ref">Face detection</span></a></li>
+<li><a class="reference internal" href="#pose-detection"><span class="std std-ref">Pose detection</span></a></li>
+<li><a class="reference internal" href="#optical-flow"><span class="std std-ref">Optical flow</span></a></li>
+<li><a class="reference internal" href="#shot-detection"><span class="std std-ref">Shot detection</span></a></li>
+<li><a class="reference internal" href="#random-frame"><span class="std std-ref">Random frame access</span></a></li>
+</ul>
+<p>Examples are provided below (visuals from <a class="reference external" href="https://www.youtube.com/watch?v=_oLBVF_VYRM">this video</a>). Auto-generated API documentation is <a class="reference external" href="source/scannertools.html">available here.</a></p>
+<div class="section" id="object-detection">
+<span id="id1"></span><h2>Object detection<a class="headerlink" href="#object-detection" title="Permalink to this headline">¶</a></h2>
+<p>Find many kinds of objects (people, cars, chairs, …) in a video using <code class="xref py py-func docutils literal notranslate"><span class="pre">detect_objects()</span></code>. <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/object_detection.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scannertools.object_detection</span> <span class="kn">as</span> <span class="nn">objdet</span>
+<span class="kn">import</span> <span class="nn">scannertools.vis</span> <span class="kn">as</span> <span class="nn">vis</span>
+<span class="n">bboxes</span> <span class="o">=</span> <span class="n">objdet</span><span class="o">.</span><span class="n">detect_objects</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">)</span>
+<span class="n">vis</span><span class="o">.</span><span class="n">draw_bboxes</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">,</span> <span class="n">bboxes</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6xt-YVFCC9I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="face-detection">
+<span id="id2"></span><h2>Face detection<a class="headerlink" href="#face-detection" title="Permalink to this headline">¶</a></h2>
+<p>Find people’s faces in a video using <code class="xref py py-func docutils literal notranslate"><span class="pre">detect_faces()</span></code>.  <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/face_detection.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scannertools.face_detection</span> <span class="kn">as</span> <span class="nn">facedet</span>
+<span class="kn">import</span> <span class="nn">scannertools.vis</span> <span class="kn">as</span> <span class="nn">vis</span>
+<span class="n">bboxes</span> <span class="o">=</span> <span class="n">facedet</span><span class="o">.</span><span class="n">detect_faces</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">)</span>
+<span class="n">vis</span><span class="o">.</span><span class="n">draw_bboxes</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">,</span> <span class="n">bboxes</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQsb_nbPf9M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="pose-detection">
+<span id="id3"></span><h2>Pose detection<a class="headerlink" href="#pose-detection" title="Permalink to this headline">¶</a></h2>
+<p>Detect people’s poses (two-dimensional skeletons) using <code class="xref py py-func docutils literal notranslate"><span class="pre">detect_poses()</span></code>. <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/pose_detection.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scannertools.pose_detection</span> <span class="kn">as</span> <span class="nn">posedet</span>
+<span class="kn">import</span> <span class="nn">scannertools.vis</span> <span class="kn">as</span> <span class="nn">vis</span>
+<span class="n">poses</span> <span class="o">=</span> <span class="n">posedet</span><span class="o">.</span><span class="n">detect_poses</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">)</span>
+<span class="n">vis</span><span class="o">.</span><span class="n">draw_poses</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">,</span> <span class="n">poses</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N1bT1yjnvMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="optical-flow">
+<span id="id4"></span><h2>Optical flow<a class="headerlink" href="#optical-flow" title="Permalink to this headline">¶</a></h2>
+<p>Compute dense motion vectors between frames with <code class="xref py py-func docutils literal notranslate"><span class="pre">compute_flow()</span></code>. <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/optical_flow.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scannertools.optical_flow</span> <span class="kn">as</span> <span class="nn">optflow</span>
+<span class="kn">import</span> <span class="nn">scannertools.vis</span> <span class="kn">as</span> <span class="nn">vis</span>
+<span class="n">flow_fields</span> <span class="o">=</span> <span class="n">optflow</span><span class="o">.</span><span class="n">compute_flow</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">)</span>
+<span class="n">vis</span><span class="o">.</span><span class="n">draw_flow_fields</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">,</span> <span class="n">flow_fields</span><span class="p">)</span>
+</pre></div>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ru048EWgc2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div class="section" id="shot-detection">
+<span id="id5"></span><h2>Shot detection<a class="headerlink" href="#shot-detection" title="Permalink to this headline">¶</a></h2>
+<p>Find shot changes in a video using <code class="xref py py-func docutils literal notranslate"><span class="pre">detect_shots()</span></code>. <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/shot_detection.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scannertools.shot_detection</span> <span class="kn">as</span> <span class="nn">shotdet</span>
+<span class="n">shots</span> <span class="o">=</span> <span class="n">shotdet</span><span class="o">.</span><span class="n">detect_shots</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">video</span><span class="p">)</span>
+<span class="n">montage_img</span> <span class="o">=</span> <span class="n">video</span><span class="o">.</span><span class="n">montage</span><span class="p">(</span><span class="n">shots</span><span class="p">)</span>
+<span class="n">tb</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;shots.jpg&#39;</span><span class="p">,</span> <span class="n">montage_img</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference external image-reference" href="https://storage.googleapis.com/scanner-data/public/sample-shots.jpg"><img alt="https://storage.googleapis.com/scanner-data/public/sample-shots-small.jpg" src="https://storage.googleapis.com/scanner-data/public/sample-shots-small.jpg" /></a>
+</div>
+<div class="section" id="random-frame-access">
+<span id="random-frame"></span><h2>Random frame access<a class="headerlink" href="#random-frame-access" title="Permalink to this headline">¶</a></h2>
+<p>Extract individual frames from a video with low overhead using <a class="reference internal" href="source/scannertools.html#scannertools.video.Video.frame" title="scannertools.video.Video.frame"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Video.frame</span></code></a>. <a class="reference external" href="https://github.com/scanner-research/scannertools/blob/master/examples/frame_montage.py">Full example here</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">frame</span> <span class="o">=</span> <span class="n">video</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">tb</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s1">&#39;frame0.jpg&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="https://storage.googleapis.com/scanner-data/public/sample-frame.jpg" src="https://storage.googleapis.com/scanner-data/public/sample-frame.jpg" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">scannertools</a><ul>
+<li><a class="reference internal" href="#object-detection">Object detection</a></li>
+<li><a class="reference internal" href="#face-detection">Face detection</a></li>
+<li><a class="reference internal" href="#pose-detection">Pose detection</a></li>
+<li><a class="reference internal" href="#optical-flow">Optical flow</a></li>
+<li><a class="reference internal" href="#shot-detection">Shot detection</a></li>
+<li><a class="reference internal" href="#random-frame-access">Random frame access</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  
+  </div>
+  
+  </body>
+</html>
